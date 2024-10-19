@@ -28,7 +28,7 @@ public class UserAction {
             chosenOperation = console.nextInt();
 
             switch (chosenOperation) {
-                case 1 -> {
+                case 1: {
                     System.out.print("Enter the name: ");
                     name = console.next();
                     System.out.print("Enter the surname: ");
@@ -38,12 +38,15 @@ public class UserAction {
                     createdStudent = studentFactory.createStudent(name, surname, passportNumber);
                     students.add(createdStudent);
                     System.out.println("Student has been added successfully");
+                    break;
                 }
-                case 2 -> {
+                case 2: {
                     studentOperationService.showStudents(students);
+                    break;
                 }
-                case 3 -> {
+                case 3: {
                     isCycleWorking = false;
+                    break;
                 }
             }
         }

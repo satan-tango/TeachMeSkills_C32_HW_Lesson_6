@@ -1,6 +1,7 @@
 package com.varkovich.lesson_6.task_1.entity;
 
 public class Student {
+
     public String name;
     public String surname;
     public String passportNumber;
