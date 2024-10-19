@@ -7,7 +7,7 @@ public enum TransferOperationResult {
     INVALID_AMOUNT_MORE_THEN_ON_ACCOUNT("Amount was entered incorrectly, you are trying to withdraw an amount" +
             "greater than what is in your account");
 
-    private String resultOfTransaction;
+    private final String resultOfTransaction;
 
     TransferOperationResult(String resultOfTransaction) {
         this.resultOfTransaction = resultOfTransaction;
